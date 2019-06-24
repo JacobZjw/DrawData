@@ -250,7 +250,7 @@ void CDrawDataView::OnMath()
 {
 	// TODO: 在此添加命令处理程序代码
 	CFile file;
-	if (!file.Open("C:\\Users\\17810\\Desktop\\tempfile.dat", CFile::modeReadWrite | CFile::shareDenyNone))
+	if (!file.Open("C:\\Users\\17810\\Desktop\\课程设计—学生信息管理系统\\Student Information Management System\\studentfile.dat", CFile::modeReadWrite | CFile::shareDenyNone))
 	{
 		MessageBox(_T("文件不存在！"), _T("警告"), MB_OK | MB_ICONWARNING);
 		return;
@@ -273,7 +273,7 @@ void CDrawDataView::OnMathLine()
 {
 	// TODO: 在此添加命令处理程序代码
 	CFile file;
-	if (!file.Open("C:\\Users\\17810\\Desktop\\tempfile.dat", CFile::modeReadWrite | CFile::shareDenyNone))
+	if (!file.Open("C:\\Users\\17810\\Desktop\\课程设计—学生信息管理系统\\Student Information Management System\\studentfile.dat", CFile::modeReadWrite | CFile::shareDenyNone))
 	{
 		MessageBox(_T("文件不存在！"), _T("警告"), MB_OK | MB_ICONWARNING);
 		return;
@@ -297,7 +297,7 @@ void CDrawDataView::OnProgramLine()
 {
 	// TODO: 在此添加命令处理程序代码
 	CFile file;
-	if (!file.Open("C:\\Users\\17810\\Desktop\\tempfile.dat", CFile::modeReadWrite | CFile::shareDenyNone))
+	if (!file.Open("C:\\Users\\17810\\Desktop\\课程设计—学生信息管理系统\\Student Information Management System\\studentfile.dat", CFile::modeReadWrite | CFile::shareDenyNone))
 	{
 		MessageBox(_T("文件不存在！"), _T("警告"), MB_OK | MB_ICONWARNING);
 		return;
@@ -320,7 +320,7 @@ void CDrawDataView::OnProgram()
 {
 	// TODO: 在此添加命令处理程序代码
 	CFile file;
-	if (!file.Open("C:\\Users\\17810\\Desktop\\tempfile.dat", CFile::modeReadWrite | CFile::shareDenyNone))
+	if (!file.Open("C:\\Users\\17810\\Desktop\\课程设计—学生信息管理系统\\Student Information Management System\\studentfile.dat", CFile::modeReadWrite | CFile::shareDenyNone))
 	{
 		MessageBox(_T("文件不存在！"), _T("警告"), MB_OK | MB_ICONWARNING);
 		return;
@@ -343,7 +343,7 @@ void CDrawDataView::OnSumLine()
 {
 	// TODO: 在此添加命令处理程序代码
 	CFile file;
-	if (!file.Open("C:\\Users\\17810\\Desktop\\tempfile.dat", CFile::modeReadWrite | CFile::shareDenyNone))
+	if (!file.Open("C:\\Users\\17810\\Desktop\\课程设计—学生信息管理系统\\Student Information Management System\\studentfile.dat", CFile::modeReadWrite | CFile::shareDenyNone))
 	{
 		MessageBox(_T("文件不存在！"), _T("警告"), MB_OK | MB_ICONWARNING);
 		return;
@@ -367,7 +367,7 @@ void CDrawDataView::OnSum()
 {
 	// TODO: 在此添加命令处理程序代码
 	CFile file;
-	if (!file.Open("C:\\Users\\17810\\Desktop\\tempfile.dat", CFile::modeReadWrite | CFile::shareDenyNone))
+	if (!file.Open("C:\\Users\\17810\\Desktop\\课程设计—学生信息管理系统\\Student Information Management System\\studentfile.dat", CFile::modeReadWrite | CFile::shareDenyNone))
 	{
 		MessageBox(_T("文件不存在！"), _T("警告"), MB_OK | MB_ICONWARNING);
 		return;
