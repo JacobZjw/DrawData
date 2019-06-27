@@ -140,8 +140,9 @@ void CDrawDataView::DrawScore(CDC* pDC, int* fScore, int nNum) //画直方图函
 	int nSegHeight = rc.Height() / nNumMax;   // 计算每段的单位高度  
 
 	COLORREF crSeg = RGB(0, 0, 192);  // 定义一个颜色变量   
+	COLORREF crSeg1 = RGB(255, 0, 0);  // 定义一个颜色变量   
 	CBrush brush1(HS_FDIAGONAL, crSeg);
-	CBrush brush2(HS_BDIAGONAL, crSeg);
+	CBrush brush2(HS_BDIAGONAL, crSeg1);
 
 	CPen   pen(PS_INSIDEFRAME, 2, crSeg);
 	CBrush* oldBrush = pDC->SelectObject(&brush1);   // 将brush1选入设备环境  
@@ -175,16 +176,6 @@ void CDrawDataView::DrawScore(CDC* pDC, int* fScore, int nNum) //画直方图函
 	pDC->SelectObject(oldBrush);  // 恢复原来的画刷属性   
 	pDC->SelectObject(oldPen);    // 恢复原来的画笔属性 
 
-	CDC* pControlDC = pDC;
-	pControlDC->SelectStockObject(BLACK_BRUSH);//设置画刷
-	CString str;
-	//pControlDC->MoveTo(180, 40);  //画y轴
-	//pControlDC->LineTo(180, 380);
-	//pDC->TextOut(180, 400, _T("人数"));
-	//pControlDC->MoveTo(180, 380);//画x轴
-	//pControlDC->LineTo(900, 380);
-	//pDC->TextOut(950, 380, _T("成绩/分"));
-
 }
 
 void CDrawDataView::Drawlist(CDC* pDC, int* fScore, int nNum)//画折线图
@@ -199,9 +190,6 @@ void CDrawDataView::Drawlist(CDC* pDC, int* fScore, int nNum)//画折线图
 		if (nSeg >= 10) nSeg = 9;// 当为100分，算为>90分数段   
 		nScoreNum[nSeg - 5] ++;   // 各分数段计数   
 	}
-	//CDC* pControlDC = pDC;
-	//pControlDC->SelectStockObject(BLACK_BRUSH);//设置画刷
-	
 	
 
 	CString str;

@@ -62,8 +62,12 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	/*m_wndToolBar.EnableDocking(CBRS_ALIGN_ANY);
 	EnableDocking(CBRS_ALIGN_ANY);
 	DockControlBar(&m_wndToolBar);*/
+	//设置标题栏的图标
+	HICON m_hIcon = AfxGetApp()->LoadIcon(IDI_ICON1);
+	SetIcon(m_hIcon, TRUE);
+	SetIcon(m_hIcon, FALSE);
 
-
+	CenterWindow();
 	return 0;
 }
 
@@ -77,6 +81,7 @@ BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs)
 	cs.cx = 800;
 	cs.cy = 600;
 	cs.style = WS_CAPTION | WS_MINIMIZEBOX |WS_MAXIMIZEBOX| WS_SYSMENU;
+
 	return TRUE;
 }
 
